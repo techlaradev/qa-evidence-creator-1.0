@@ -2,6 +2,7 @@ import streamlit as st
 from pathlib import Path
 from services.file_manager import create_report_folder, save_uploaded_files
 from services.pdf_generator import generate_pdf
+import time
 
 st.set_page_config(page_title="QA Evidence Pack Generator", layout="centered")
 
@@ -72,7 +73,8 @@ if st.button("Generate Report"):
         }
 
         pdf_path = generate_pdf(data, report_folder)
-
         st.success("Report generated successfully!")
-        st.write(f"Folder: `{report_folder}`")
-        st.write(f"PDF: `{pdf_path}`")
+
+        time.sleep(2)
+
+        st.rerun()

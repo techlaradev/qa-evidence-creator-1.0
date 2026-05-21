@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 import re
-
+import unicodedata
 
 BASE_REPORTS_FOLDER = Path("reports")
 
@@ -40,3 +40,4 @@ def save_uploaded_files(uploaded_files, report_folder: Path) -> list[str]:
         evidence_names.append(f"evidences/{uploaded_file.name}")
 
     return evidence_names
+
