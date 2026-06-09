@@ -5,7 +5,7 @@ py -m pip install -r requirements.txt
 
 echo Iniciando app...
 echo APP FEITO POR LARA CARDOSO 
-py -m streamlit run app.py
+py -m streamlit run generate.py
 
 echo APP FEITO POR LARA CARDOSO 
 pause
