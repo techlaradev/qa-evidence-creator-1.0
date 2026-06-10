@@ -33,7 +33,7 @@ if test_type == "API":
 uploaded_files = st.file_uploader(
     "Upload evidences",
     accept_multiple_files=True,
-    type=["png", "jpg", "jpeg", "mp4", "mov", "webm"]
+    type=["png", "jpg", "jpeg", "mp4", "mov", "webm", "pdf"]
 )
 
 # 🚀 Gerar
